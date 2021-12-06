@@ -69,3 +69,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Procedural Worlds/
+Assets/Gaia User Data/Sessions/GS-20211205 - 220916/Terrain Layers/Gaia_-20211206-030033_4.asset
+Assets/Gaia User Data/Sessions/GS-20211205 - 220916/Session Operations/20211206-030403 Spawning - Gaia Pro Sample-Texture(Clone).asset.meta
+Assets/Gaia User Data/
