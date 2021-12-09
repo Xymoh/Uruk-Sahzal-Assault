@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     // Roll rotation
     [SerializeField] private float controlRollFactor = -20f;
 
+    [SerializeField] GameObject[] lasers;
+
     private float xThrow;
     private float yThrow;
 
@@ -25,9 +27,10 @@ public class PlayerController : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
     }
 
-    private void ProcessTranslation()
+    void ProcessTranslation()
     {
         // Getting input axis for hor and ver directions
         // calculating movement by time.deltatime
@@ -46,7 +49,7 @@ public class PlayerController : MonoBehaviour
         transform.localPosition = new Vector3(moveX, moveY, transform.localPosition.z);
     }
 
-    private void ProcessRotation()
+    void ProcessRotation()
     {
         float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
         float pitchDueToControlThrow = yThrow * controlPitchFactor;
@@ -56,5 +59,17 @@ public class PlayerController : MonoBehaviour
         float roll = xThrow * controlRollFactor;
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    void ProcessFiring() 
+    {
+        if (Input.GetKey(KeyCode.Mouse0)) 
+        {
+            Debug.Log("Shooting");
+        }
+        else 
+        {
+            return;
+        }
     }
 }
