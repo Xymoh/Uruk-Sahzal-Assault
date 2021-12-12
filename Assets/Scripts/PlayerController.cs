@@ -1,27 +1,37 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float controlSpeed = 30f;
-    [SerializeField] private float xRange = 10f;
-    [SerializeField] private float yRange = 10f;
+    [Header("General Setup Settings")]
+    [Tooltip("How fast ship moves up and down based upon player input")] 
+    [SerializeField] float controlSpeed = 30f;
+    [Tooltip("How fast player moves horizontally")] [SerializeField] float xRange = 10f;
+    [Tooltip("How fast player moves vertically")] [SerializeField] float yRange = 10f;
 
-    // Pitch (Up & Down) rotation
-    [SerializeField] private float positionPitchFactor = -2f;
-    [SerializeField] private float controlPitchFactor = -15f;
+    [Header("Screen position based tuning")]
+    [SerializeField] float positionPitchFactor = -2f;
+    [SerializeField] float controlPitchFactor = -15f;
 
-    // Yaw (side) rotation
-    [SerializeField] private float positionYawFactor = 2f;
+    [Header("Player input based tuning")]
+    [SerializeField] float positionYawFactor = 2f;
+    [SerializeField] float controlRollFactor = -20f;
 
-    // Roll rotation
-    [SerializeField] private float controlRollFactor = -20f;
-
+    [Header("Laser gun array")]
+    [Tooltip("Add all player lasers here")]
     [SerializeField] GameObject[] lasers;
 
-    private float xThrow;
-    private float yThrow;
+    float xThrow;
+    float yThrow;
+
+    ParticleSystem ps;
+
+    void Start()   
+    {
+        ps = GetComponent<ParticleSystem>();    
+    }
 
     void Update()
     {
@@ -65,11 +75,21 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Mouse0)) 
         {
-            Debug.Log("Shooting");
+            SetLasersActive(true);
         }
         else 
         {
-            return;
+            SetLasersActive(false);
+        }
+    }
+
+    void SetLasersActive(bool isActive)
+    {
+        // for each of the lasers that we have, activate/deactivate them
+        foreach (GameObject laser in lasers) 
+        {
+            var emmisionModule = laser.GetComponent<ParticleSystem>().emission;
+            emmisionModule.enabled = isActive;
         }
     }
 }
