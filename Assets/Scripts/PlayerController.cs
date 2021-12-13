@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void SetLasersActive(bool isActive)
+    public void SetLasersActive(bool isActive)
     {
         // for each of the lasers that we have, activate/deactivate them
         foreach (GameObject laser in lasers) 

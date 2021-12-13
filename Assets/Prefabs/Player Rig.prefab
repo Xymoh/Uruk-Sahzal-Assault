@@ -131,7 +131,6 @@ Transform:
   m_Children:
   - {fileID: 2094744998323946826}
   - {fileID: 2090357629036326361}
-  - {fileID: 5296458406977740060}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -180,11 +179,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2094744999052787604}
+    m_TransformParent: {fileID: 2090357629036326361}
     m_Modifications:
     - target: {fileID: 1879935562920639272, guid: 7e620b33bf1db7e4092d5f2da75631e8, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1879935562920639272, guid: 7e620b33bf1db7e4092d5f2da75631e8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -204,15 +203,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1879935562920639272, guid: 7e620b33bf1db7e4092d5f2da75631e8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1879935562920639272, guid: 7e620b33bf1db7e4092d5f2da75631e8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1879935562920639272, guid: 7e620b33bf1db7e4092d5f2da75631e8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1879935562920639272, guid: 7e620b33bf1db7e4092d5f2da75631e8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -236,11 +235,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e620b33bf1db7e4092d5f2da75631e8, type: 3}
---- !u!4 &5296458406977740060 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1879935562920639272, guid: 7e620b33bf1db7e4092d5f2da75631e8, type: 3}
-  m_PrefabInstance: {fileID: 6023023219211511348}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &7954420917165603195 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 4464707817342738255, guid: 7e620b33bf1db7e4092d5f2da75631e8, type: 3}

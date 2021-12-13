@@ -243,7 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelLoadDelay: 3
   crashParticles: {fileID: 4464707817342738255, guid: 7e620b33bf1db7e4092d5f2da75631e8, type: 3}
-  ShipColliders: {fileID: 0}
+  ShipColliders: {fileID: 7154412954278507063}
 --- !u!1 &7154412954278507063
 GameObject:
   m_ObjectHideFlags: 0

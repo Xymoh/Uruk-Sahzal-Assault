@@ -10,6 +10,13 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] ParticleSystem crashParticles;
     [SerializeField] GameObject ShipColliders;
 
+    PlayerController playerController;
+
+    void Start() 
+    {
+        playerController = FindObjectOfType<PlayerController>();    
+    }
+
     void OnCollisionEnter(Collision other)
     {
         Debug.Log(this.name + " --bumped into-- " + other.gameObject.name);
@@ -25,6 +32,7 @@ public class CollisionHandler : MonoBehaviour
     {
         crashParticles.Play();
         ShipColliders.SetActive(false);
+        playerController.SetLasersActive(false);
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<PlayerController>().enabled = false;
         Invoke("RestartLevel", levelLoadDelay);
