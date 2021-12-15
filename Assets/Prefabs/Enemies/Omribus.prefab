@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 7887294663743386607}
   - component: {fileID: 5373282525014837029}
   - component: {fileID: 5409720817513769365}
+  - component: {fileID: -8464734082692967146}
   m_Layer: 0
   m_Name: Omribus
   m_TagString: Untagged
@@ -263,10 +264,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4346defdd6ddf546a899508c926bc95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 2632280485315280166, guid: 54b6a701d6649c443b23328a25ad912e, type: 3}
-  hitVFX: {fileID: 2632280485315280166, guid: c12b35af09533ab4487c75b989b9d8d1, type: 3}
+  deathFX: {fileID: 2632280485315280166, guid: 54b6a701d6649c443b23328a25ad912e, type: 3}
+  hitFX: {fileID: 2632280485315280166, guid: c12b35af09533ab4487c75b989b9d8d1, type: 3}
   amountToIncreaseScore: 70
   enemyHitPoints: 200
+--- !u!65 &-8464734082692967146
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5877557659141236464}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.85927, y: 2.496461, z: 10.716055}
+  m_Center: {x: 0.00000023841858, y: -0.000001013279, z: 0}
 --- !u!1 &6187529927389181145
 GameObject:
   m_ObjectHideFlags: 0

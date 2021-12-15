@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 2987481239352530165}
   - component: {fileID: 2976914741498877555}
   - component: {fileID: 4364911161869119088}
+  - component: {fileID: 3827569501861805801}
   m_Layer: 0
   m_Name: YellowBanana
   m_TagString: Untagged
@@ -139,11 +140,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4346defdd6ddf546a899508c926bc95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 2632280485315280166, guid: 54b6a701d6649c443b23328a25ad912e, type: 3}
-  hitVFX: {fileID: 2632280485315280166, guid: c12b35af09533ab4487c75b989b9d8d1, type: 3}
-  parent: {fileID: 0}
+  deathFX: {fileID: 2632280485315280166, guid: 54b6a701d6649c443b23328a25ad912e, type: 3}
+  hitFX: {fileID: 2632280485315280166, guid: c12b35af09533ab4487c75b989b9d8d1, type: 3}
   amountToIncreaseScore: 30
   enemyHitPoints: 5
+--- !u!65 &3827569501861805801
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955748782002172709}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.228247, y: 4.267086, z: 11.603618}
+  m_Center: {x: 0, y: -0.0000029802322, z: 0}
 --- !u!1 &2956105283073204617
 GameObject:
   m_ObjectHideFlags: 0

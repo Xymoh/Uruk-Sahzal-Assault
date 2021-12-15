@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 2387897231380004213}
   - component: {fileID: 2378657968284000479}
   - component: {fileID: 7629166263396308708}
+  - component: {fileID: -6445854181305466402}
   m_Layer: 0
   m_Name: Wolf
   m_TagString: Untagged
@@ -183,11 +184,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4346defdd6ddf546a899508c926bc95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 2632280485315280166, guid: 54b6a701d6649c443b23328a25ad912e, type: 3}
-  hitVFX: {fileID: 2632280485315280166, guid: c12b35af09533ab4487c75b989b9d8d1, type: 3}
-  parent: {fileID: 0}
+  deathFX: {fileID: 2632280485315280166, guid: 54b6a701d6649c443b23328a25ad912e, type: 3}
+  hitFX: {fileID: 2632280485315280166, guid: c12b35af09533ab4487c75b989b9d8d1, type: 3}
   amountToIncreaseScore: 50
   enemyHitPoints: 30
+--- !u!65 &-6445854181305466402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2400642969723796715}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.60827, y: 1.7607899, z: 12.307949}
+  m_Center: {x: 0, y: -0.00001564622, z: 0}
 --- !u!1 &2401081782607635095
 GameObject:
   m_ObjectHideFlags: 0

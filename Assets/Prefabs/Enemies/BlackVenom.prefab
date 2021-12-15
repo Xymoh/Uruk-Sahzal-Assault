@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 8265413001806299436}
   - component: {fileID: 8259506352435135876}
   - component: {fileID: 6209540243164640710}
+  - component: {fileID: 1798414576901201764}
   m_Layer: 0
   m_Name: BlackVenom
   m_TagString: Untagged
@@ -216,10 +217,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4346defdd6ddf546a899508c926bc95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 2632280485315280166, guid: 54b6a701d6649c443b23328a25ad912e, type: 3}
-  hitVFX: {fileID: 2632280485315280166, guid: c12b35af09533ab4487c75b989b9d8d1, type: 3}
+  deathFX: {fileID: 2632280485315280166, guid: 54b6a701d6649c443b23328a25ad912e, type: 3}
+  hitFX: {fileID: 2632280485315280166, guid: c12b35af09533ab4487c75b989b9d8d1, type: 3}
   amountToIncreaseScore: 40
   enemyHitPoints: 15
+--- !u!65 &1798414576901201764
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8271571030876374950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.1566553, y: 2.955462, z: 10.7425585}
+  m_Center: {x: 0, y: -0.000011980534, z: 0}
 --- !u!1 &8273006731084620852
 GameObject:
   m_ObjectHideFlags: 0

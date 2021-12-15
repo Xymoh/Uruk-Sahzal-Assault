@@ -357,6 +357,7 @@ GameObject:
   - component: {fileID: 2935200472145342363}
   - component: {fileID: 2927261029516749791}
   - component: {fileID: 7527566534295464380}
+  - component: {fileID: -7838152459336769495}
   m_Layer: 0
   m_Name: SpaceBat
   m_TagString: Untagged
@@ -440,8 +441,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4346defdd6ddf546a899508c926bc95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 2632280485315280166, guid: 54b6a701d6649c443b23328a25ad912e, type: 3}
-  hitVFX: {fileID: 2632280485315280166, guid: c12b35af09533ab4487c75b989b9d8d1, type: 3}
-  parent: {fileID: 0}
+  deathFX: {fileID: 2632280485315280166, guid: 54b6a701d6649c443b23328a25ad912e, type: 3}
+  hitFX: {fileID: 2632280485315280166, guid: c12b35af09533ab4487c75b989b9d8d1, type: 3}
   amountToIncreaseScore: 30
-  enemyHitPoints: 3
+  enemyHitPoints: 1
+--- !u!65 &-7838152459336769495
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2939706244669712109}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.115113, y: 2.7828712, z: 10.850533}
+  m_Center: {x: 0, y: -0.000013887882, z: 0.0000026226044}
