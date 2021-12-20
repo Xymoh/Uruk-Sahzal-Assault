@@ -10,7 +10,14 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] ParticleSystem crashParticles;
     [SerializeField] GameObject ShipColliders;
 
+
+    bool isDebugMode = false;
     PlayerController playerController;
+
+    void Update()
+    {
+        TurnOffCollision();    
+    }
 
     void Start() 
     {
@@ -19,11 +26,15 @@ public class CollisionHandler : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
+        if (isDebugMode) { return; }
+
         Debug.Log(this.name + " --bumped into-- " + other.gameObject.name);
     }
 
     void OnTriggerEnter(Collider other)
     {
+        if (isDebugMode) { return; }
+
         Debug.Log(this.name + " --bumped into-- " + other.gameObject.name);
         StartCrashSequence();
     }
@@ -42,5 +53,23 @@ public class CollisionHandler : MonoBehaviour
     {
         int currentLevel = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentLevel);
+    }
+
+    // Debug option
+    void TurnOffCollision()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            isDebugMode = !isDebugMode;
+
+            if (isDebugMode == false)
+            {
+                Debug.Log("Debug Mode Disabled");
+            }
+            else 
+            {
+                Debug.Log("Debug Mode Enabled");
+            }
+        }
     }
 }
