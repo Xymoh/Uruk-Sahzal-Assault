@@ -41645,6 +41645,7 @@ PlayableDirector:
     m_References:
     - 30722b9022e20c74f9f46da7c96292c1: {fileID: 239731035}
     - 2183a4dec800bd74894ea6b828780ae6: {fileID: 1304807481}
+    - a52114f7d2e00c1448938cc89dfc3413: {fileID: 6109511838697841083}
     - b48f22fa0f1311548a571b10ea0b966d: {fileID: 314104904}
     - f67534c2ad9d4ca45a384796332e2a23: {fileID: 483151129}
     - 2ad46aa8430b1644ea12cbcc6d95f698: {fileID: 875124450}
@@ -41657,12 +41658,14 @@ PlayableDirector:
     - 29b3bf826ae41744a9e882891f56652a: {fileID: 384480393}
     - 33b4c1fa8009105418cbbe48e7bff653: {fileID: 483151129}
     - d023aea116e357442974ac2d65ce35be: {fileID: 387437268}
+    - 229e19f6ba3e31040a96634d4ef93f92: {fileID: 6109511838697841083}
     - ed2e3bbf2eaf33a4386c714c218a970d: {fileID: 709146209}
     - 0e54ad58bbf96d045acf7f2f83841866: {fileID: 1167771038}
     - ac2afc81b5277704d88c0c174c6ba012: {fileID: 436948152}
     - 5f63a4a6cfb5ea240b856ce06d109e60: {fileID: 551793629}
     - e5816cdbb9bfefc41852f332c83b32f5: {fileID: 1860278320}
     - fd7766500a0f58b4eb60990bc3bf3c34: {fileID: 6109511838697841083}
+    - 288645b07e0916d45b982eb1479407a8: {fileID: 6109511838697841083}
     - 205b4e9243761704384a568423809ac3: {fileID: 52857335}
     - fe856bad50b942a4292b0fee99ce8146: {fileID: 1300038144}
     - f756aef6ddbcdff4d9a83dad11c492fb: {fileID: 0}
@@ -41675,10 +41678,13 @@ PlayableDirector:
     - 8f53652d91fcfd24c8222057037d2936: {fileID: 536386662}
     - 005ff4f07b43b554cb39b58268948448: {fileID: 536386662}
     - 9fabdeb691f35c84da0062001030a710: {fileID: 1639717836}
+    - 7d636bbb4a8d7e94ab7affc99e1513f5: {fileID: 6109511838697841083}
     - b24d6513c7f49e64fb2dfe5d80ee185c: {fileID: 6109511838697841083}
     - 093cb154fbeb1d348af76820d6fe5516: {fileID: 536386662}
     - a39c07eadd1bab14a8adb19b39b950f2: {fileID: 174405449}
     - c17c0d553f2e55443a78aa71b8c7e98c: {fileID: 981669382}
+    - 923af17902c09f448841fff7b6505ccf: {fileID: 6109511838697841083}
+    - 716142e77c2c3c746950882254fdb1c0: {fileID: 6109511838697841083}
     - 448d63dbe49b98a419e447485c62a1aa: {fileID: 245523710}
     - 8e7f05651a7608e489d00760d0434a55: {fileID: 314104904}
     - e3935fac2ab84b54c998267853a8b333: {fileID: 1319033987}
@@ -41686,6 +41692,7 @@ PlayableDirector:
     - 13cbd2e6fa1967b44a77cef2468564b6: {fileID: 1036956710}
     - 908e0065a3a80b745b623da0eead7d85: {fileID: 1316132217}
     - df88cd345ef3f784391ca2bf55d788de: {fileID: 1702377889}
+    - 70c8365abbcebd44c8d1e4f73af88b7a: {fileID: 6109511838697841083}
     - 07345bc790e77af4491ff081795ffb66: {fileID: 6109511838697841083}
 --- !u!4 &1004999306
 Transform:
@@ -43807,7 +43814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_stampID: 194e61e6-cba8-4b4f-b743-59386458675f
-  m_stampImage: {fileID: 1670004721}
+  m_stampImage: {fileID: 1935041164}
   m_stampImageGUID: 
   m_autoSpawnersToggleAll: 0
   m_autoMaskExportersToggleAll: 0
@@ -58319,53 +58326,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1920158762507531025, guid: 35348ac853f10584a9e52b978af197f9, type: 3}
   m_PrefabInstance: {fileID: 1662569581}
   m_PrefabAsset: {fileID: 0}
---- !u!28 &1670004721
-Texture2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UnityWhite
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 2
-  m_Width: 4
-  m_Height: 4
-  m_CompleteImageSize: 256
-  m_MipsStripped: 0
-  m_TextureFormat: 20
-  m_MipCount: 1
-  m_IsReadable: 1
-  m_IsPreProcessed: 0
-  m_IgnoreMasterTextureLimit: 0
-  m_StreamingMipmaps: 0
-  m_StreamingMipmapsPriority: 0
-  m_VTOnly: 0
-  m_AlphaIsTransparency: 0
-  m_ImageCount: 1
-  m_TextureDimension: 2
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
-  m_LightmapFormat: 0
-  m_ColorSpace: 0
-  m_PlatformBlob: 
-  image data: 256
-  _typelessdata: 0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1001 &1672106186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60651,6 +60611,53 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!28 &1935041164
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UnityWhite
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 2
+  m_Width: 4
+  m_Height: 4
+  m_CompleteImageSize: 256
+  m_MipsStripped: 0
+  m_TextureFormat: 20
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMasterTextureLimit: 0
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 0
+  m_PlatformBlob: 
+  image data: 256
+  _typelessdata: 0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f0000803f
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1001 &1941534499
 PrefabInstance:
   m_ObjectHideFlags: 0
